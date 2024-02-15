@@ -1,6 +1,6 @@
 GroupName:Masarap
 member: Mark Louisse Jardiniano
-        Julius Murillo
+        Julius Benefer Murillo
         Ramon Jacob Laugo
         Ian Reniel Rey
 
