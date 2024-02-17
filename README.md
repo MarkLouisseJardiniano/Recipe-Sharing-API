@@ -1,5 +1,5 @@
 GroupName:Masarap
-member: Mark Louisse Jardiniano
+Member: Mark Louisse Jardiniano
         Julius Benefer Murillo
         Ramon Jacob Laugo
         Ian Reniel Rey
@@ -9,6 +9,8 @@ Project Name: Recipe Sharing API
 Purpose: The project aims to provide an API for managing recipes. It allows users to perform CRUD operations (Create, Read, Update, Delete) on recipes.
 
 Features:
+- User Registration
+- User Login
 - Retrieve all recipes
 - Retrieve a specific recipe by using ID or tags
 - Add a new recipe
@@ -27,9 +29,15 @@ How to Set it Up Locally:
 5. The server will start running on port 3000 by default. If you want to specify a different port, set the PORT environment variable.
 
 Using the API Endpoints:
+- GET /register: Retrieves all registered users.
+  
+- POST /register: Register a new user.
+  
+- POST /login: To login a registered account make sure the username and password is correct bucause you cannot log in if not.
+  
 - GET /recipes: Retrieves all recipes.
 
-- GET /recipes/:query: Retrieves a specific recipe by its ID or tags. Replace ':query' with the ID or tags you want to search for.
+- GET /recipes/:query: Retrieves a specific recipe by its ID, title or tags. Replace ':query' with the ID,title or tags you want to search for.
 
 - POST /recipes: Adds a new recipe. Send a POST request with JSON data containing the recipe details ('title', 'ingredients', 'cookingStep', 'tags') in the request body.
 
